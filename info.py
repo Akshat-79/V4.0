@@ -30,7 +30,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/ShareUsLinkOpeninigGuide")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002086571200'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002029611411'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6444128136 6350827518').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6350827518').split()]
@@ -40,7 +40,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
-auth_channel = environ.get('AUTH_CHANNEL', '-1001522888236') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002276798827') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002244588420')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -53,7 +53,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '~𝑴𝑨𝑾𝑯 𝑶𝒓𝒛𝒛⁠•2.0')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '~𝑴𝑨𝑾𝑯𝑶𝒓𝒛𝒛⁠•2.0')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
@@ -67,9 +67,9 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Itsstoic') # owner username with
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mawhOrzzflix')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+iMbgetn4vf45MDRl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SeriesAndFlicksOrzzUpdates')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/mawhExtract')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+-PbePn-lJFxmMDU1') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MawhOrzzFlick') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
